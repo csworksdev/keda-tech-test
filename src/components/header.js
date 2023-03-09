@@ -3,8 +3,15 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div>
-      <nav className="navbar navbar-expand-lg bg-light navbar-fixed-top">
+    <div
+      className="p-4"
+      style={{
+        top: 0,
+        position: "absolute",
+        width: "-webkit-fill-available",
+      }}
+    >
+      <nav className="navbar navbar-expand-lg navbar-fixed-top">
         <div className="container-fluid">
           <button
             className="navbar-toggler"
@@ -26,11 +33,15 @@ const Header = () => {
                 height="24"
                 className="d-inline-block align-text-top"
               />
-              <span>Home</span>
+              <span style={{ color: "#ffffff", fontSize: "36px" }}>Home</span>
             </a>
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#about">
+                <a
+                  className="nav-link active"
+                  aria-current="page"
+                  href="#about"
+                >
                   <h5>About</h5>
                 </a>
               </li>
@@ -45,7 +56,9 @@ const Header = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <button className="btn btn-outline-success">Login</button>
+                <button className="btn btn-light">
+                  <h4 className="m-0">Login</h4>
+                </button>
               </li>
             </ul>
           </div>
